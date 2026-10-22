@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "al80-studio",
+  "outputfilename": "al80-studio",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "AL80 Studio contributors"
+  },
+  "info": {
+    "companyName": "AL80 Studio",
+    "productName": "AL80 Studio",
+    "productVersion": "1.0.0",
+    "copyright": "MIT License",
+    "comments": "YUNZII AL80 keyboard control software (AI-assisted)"
+  }
+}

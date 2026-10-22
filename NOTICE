@@ -1,0 +1,21 @@
+AL80 Studio — 第三方组件声明
+
+本项目的三维视图移植自 VIA 官方前端，因此整体以 GPL-3.0 发布。
+
+1) the-via/app (VIA 官方前端)
+   https://github.com/the-via/app
+   许可证: GPL-3.0
+   使用范围:
+   - frontend/src/assets/via-keycaps.glb（原 keyboard_components.glb，DRACO 压缩的键帽网格）
+   - frontend/src/components/KbModel.tsx 中的外壳几何、选件规则、UV 生成公式、
+     材质与光照参数，均参照 the-via/app 的 3D 实现改写
+
+2) three.js — MIT — https://github.com/mrdoob/three.js
+3) Google Draco（网格压缩解码器） — Apache-2.0 — https://github.com/google/draco
+4) Wails v2 — MIT — https://github.com/wailsapp/wails
+5) React / React DOM — MIT — https://github.com/facebook/react
+
+协议本身（VIA / QMK 报文格式）属于事实性技术信息，本项目通过实机抓包与实测独立实现，
+未复制 QMK 或 VIA 的固件与固件源码。
+
+本项目中不包含、也不分发任何厂商的 VIA 定义 JSON 原文件、固件镜像或厂商图标。

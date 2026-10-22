@@ -1,0 +1,24 @@
+# 本项目刻意提交了这些"产物"，为的是克隆后不用联网下载依赖：
+#   vendor/             Go 依赖（go mod vendor）
+#   frontend/dist/      前端构建产物（wails build -s 直接用它）
+#   release/*.exe       编译好的程序
+# 如果你要改前端源码，仍需 cd frontend && npm install。
+
+# 构建中间产物
+build/bin/
+*.log
+*.tmp
+
+# 依赖缓存（不需要，且体积大）
+node_modules/
+frontend/node_modules/
+frontend/package.json.md5
+
+# 编辑器与系统
+.vs/
+.vscode/
+.idea/
+*.user
+desktop.ini
+Thumbs.db
+.DS_Store
