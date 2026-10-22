@@ -26,7 +26,7 @@ YUNZII AL80（QMK / VIA 固件 V0103）的 Windows 桌面控制软件。免驱�
 
 ## 运行
 
-1. 下载 `release/AL80 Studio.exe`。
+1. 到 [Releases](https://github.com/cArve7850/JS_AL80/releases/latest) 下载 `AL80-Studio-v1.0.0.exe`。
 2. 双击运行（不需要安装，不需要驱动）。
 3. 用**数据线**连接键盘（USB 有线模式）。
 
@@ -50,7 +50,9 @@ YUNZII AL80（QMK / VIA 固件 V0103）的 Windows 桌面控制软件。免驱�
 
 ## 直接使用（推荐）
 
-仓库里的 `release/AL80 Studio.exe` 就是编译好的程序，双击即可运行，不需要装 Go、Node 或任何运行库（Windows 11 自带 WebView2；Windows 10 若提示缺失，装微软官方 Evergreen Runtime）。
+到 [Releases](https://github.com/cArve7850/JS_AL80/releases/latest) 下载 `AL80-Studio-v1.0.0.exe`，双击即运行。不需要装 Go、Node 或任何运行库（Windows 11 自带 WebView2；Windows 10 若提示缺失，装微软官方 Evergreen Runtime）。
+
+> 为什么 exe 不放在仓库正文里：二进制放在 Release 附件里，`git clone` 才不会被这 14 MB 拖慢。源码仓库本身已经包含编译所需的一切（`vendor/` + `frontend/dist/`）。
 
 ## 从源码编译（不需要联网下载依赖）
 
@@ -123,7 +125,7 @@ wails build -platform windows/amd64 -webview2 browser -trimpath -s
 │       ├── config/          # 配列、灯效表、屏幕参数
 │       └── lib/             # Wails 桥接、状态存储、颜色换算、键码表
 ├── build/                   # 图标与 Windows 清单
-└── release/                 # 编译好的单文件 exe
+└── (release 产物不上仓库，见 Releases 页面)
 ```
 
 ---

@@ -4,6 +4,9 @@
 #   release/*.exe       编译好的程序
 # 如果你要改前端源码，仍需 cd frontend && npm install。
 
+# 编译产物走 GitHub Releases，不进仓库
+/release/*.exe
+
 # 构建中间产物
 build/bin/
 *.log
